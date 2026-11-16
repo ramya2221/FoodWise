@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodWise | Smart Food Habits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🥗 FoodWise</div>
+
+    <nav>
+        <a href="#home" id="navHome">Home</a>
+        <a href="#problems" id="navProblems">Problems & Solutions</a>
+        <a href="#algorithms" id="navAI">AI Algorithms</a>
+        <a href="#how" id="navHow">How It Works</a>
+        <a href="#assessment" id="navAssessment">Food Assistant</a>
+    </nav>
+
+    <button id="languageBtn" onclick="toggleLanguage()">తెలుగు</button>
+</header>
+
+<main>
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="tag">COMMUNITY SERVICE PROJECT</span>
+        <h1 id="heading">Build Better Food Habits with FoodWise</h1>
+        <p id="description">
+            Understand everyday eating patterns, identify unhealthy
+            food habits and discover affordable healthy food choices.
+        </p>
+
+        <button class="main-btn" onclick="goToAssessment()" id="startBtn">
+            Get Started →
+        </button>
+
+        <a class="secondary-btn" href="#problems">Explore Features</a>
+    </div>
+
+    <div class="food-image">🥗 🍎 🥕</div>
+</section>
+
+<div class="project-note">
+    <strong>About this prototype:</strong>
+    FoodWise is an educational CSP project demonstrating
+    rule-based food habit analysis and practical suggestions.
+    It does not diagnose medical or nutritional conditions.
+</div>
+
+<section class="section" id="overview">
+    <h2>About FoodWise</h2>
+    <p>
+        FoodWise aims to create awareness about everyday food habits.
+        It helps users understand common eating problems and explore
+        affordable, practical ways to improve their food choices.
+    </p>
+</section>
+
+<section class="section" id="problems">
+    <h2 id="problemTitle">Food Habit Problems & Solutions</h2>
+
+    <div class="cards">
+        <article class="card">
+            <div class="emoji">🍟</div>
+            <h3>Frequent Junk Food Consumption</h3>
+            <p><strong>Problem:</strong> Eating packaged snacks and junk food frequently.</p>
+            <p><strong>Solution:</strong> Try homemade snacks, roasted chana, peanuts and seasonal fruits.</p>
+        </article>
+
+        <article class="card">
+            <div class="emoji">🥦</div>
+            <h3>Low Fruit and Vegetable Intake</h3>
+            <p><strong>Problem:</strong> Not including enough fruits and vegetables in daily meals.</p>
+            <p><strong>Solution:</strong> Include affordable seasonal fruits and vegetables regularly.</p>
+        </article>
+
+        <article class="card">
+            <div class="emoji">📚</div>
+            <h3>Lack of Nutrition Awareness</h3>
+            <p><strong>Problem:</strong> Limited understanding of balanced nutrition.</p>
+            <p><strong>Solution:</strong> Learn about food groups and include varied foods in meals.</p>
+        </article>
+
+        <article class="card">
+            <div class="emoji">⏰</div>
+            <h3>Irregular Meal Timings</h3>
+            <p><strong>Problem:</strong> Eating meals at inconsistent times or frequently delaying meals.</p>
+            <p><strong>Solution:</strong> Plan regular meal times and maintain a daily routine.</p>
+        </article>
+
+        <article class="card">
+            <div class="emoji">💧</div>
+            <h3>Insufficient Water Intake</h3>
+            <p><strong>Problem:</strong> Forgetting to drink water throughout the day.</p>
+            <p><strong>Solution:</strong> Keep drinking water regularly and carry a water bottle.</p>
+        </article>
+    </div>
+</section>
+
+<section class="section peach-section" id="algorithms">
+    <h2 id="algorithmTitle">AI Algorithms Used</h2>
+
+    <div class="cards">
+        <article class="card">
+            <div class="emoji">🧠</div>
+            <h3>Rule-Based Expert System</h3>
+            <p>
+                Uses predefined IF-THEN rules to identify food habits
+                and provide suitable suggestions.
+            </p>
+            <p class="algorithm-label">Demonstrated in this prototype</p>
+        </article>
+
+        <article class="card">
+            <div class="emoji">🌳</div>
+            <h3>Decision Tree Classification</h3>
+            <p>
+                A machine-learning algorithm that can classify food
+                habits using labelled training data.
+            </p>
+            <p class="algorithm-label">Proposed future implementation</p>
+        </article>
+
+        <article class="card">
+            <div class="emoji">🍎</div>
+            <h3>Food Recommendation System</h3>
+            <p>
+                Matches identified habits with practical and affordable
+                food alternatives.
+            </p>
+            <p class="algorithm-label">Demonstrated using predefined recommendations</p>
+        </article>
+    </div>
+</section>
+
+<section class="section" id="how">
+    <h2>How FoodWise Works</h2>
+
+    <div class="steps">
+        <div class="step">
+            <span>1</span>
+            <h3>User Input</h3>
+            <p>Answer questions about everyday food habits.</p>
+        </div>
+
+        <div class="step">
+            <span>2</span>
+            <h3>Rule-Based Analysis</h3>
+            <p>The prototype checks answers using predefined rules.</p>
+        </div>
+
+        <div class="step">
+            <span>3</span>
+            <h3>Problem Identification</h3>
+            <p>Possible areas for improvement are identified.</p>
+        </div>
+
+        <div class="step">
+            <span>4</span>
+            <h3>Suggestions</h3>
+            <p>Practical food habit suggestions are displayed.</p>
+        </div>
+    </div>
+</section>
+
+<section class="assessment-section" id="assessment">
+    <div class="assessment">
+        <h2 id="formHeading">Food Habit Assessment</h2>
+        <p id="formDescription">
+            Answer these questions to see your demonstration results.
+        </p>
+
+        <form id="foodForm">
+
+            <label for="snacks" id="snackLabel">
+                1. How often do you eat packaged snacks?
+            </label>
+            <select id="snacks" required>
+                <option value="">Select answer</option>
+                <option value="often">Almost every day</option>
+                <option value="sometimes">2–3 times a week</option>
+                <option value="rarely">Rarely</option>
+            </select>
+
+            <label for="fruits" id="fruitLabel">
+                2. How often do you eat fruits and vegetables?
+            </label>
+            <select id="fruits" required>
+                <option value="">Select answer</option>
+                <option value="daily">Daily</option>
+                <option value="sometimes">Sometimes</option>
+                <option value="rarely">Rarely</option>
+            </select>
+
+            <label for="nutrition" id="nutritionLabel">
+                3. How well do you understand balanced nutrition?
+            </label>
+            <select id="nutrition" required>
+                <option value="">Select answer</option>
+                <option value="good">I understand it well</option>
+                <option value="some">I know a little</option>
+                <option value="low">I need more awareness</option>
+            </select>
+
+            <label for="timings" id="timingLabel">
+                4. Are your meal timings regular?
+            </label>
+            <select id="timings" required>
+                <option value="">Select answer</option>
+                <option value="regular">Usually regular</option>
+                <option value="sometimes">Sometimes irregular</option>
+                <option value="irregular">Often irregular</option>
+            </select>
+
+            <label for="water" id="waterLabel">
+                5. How often do you remember to drink water?
+            </label>
+            <select id="water" required>
+                <option value="">Select answer</option>
+                <option value="regular">Regularly</option>
+                <option value="sometimes">Sometimes forget</option>
+                <option value="rarely">Often forget</option>
+            </select>
+
+            <button class="main-btn" type="submit" id="analyseBtn">
+                Analyse My Food Habits
+            </button>
+        </form>
+
+        <div id="results" class="results" hidden>
+            <h2 id="resultHeading">Your Analysis</h2>
+            <div id="resultContent"></div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <h2>🥗 FoodWise</h2>
+    <p>Smart Food Habits Improvement System</p>
+    <p>Community Service Project | Educational Prototype</p>
+    <p class="disclaimer">
+        This demonstration provides general educational suggestions
+        and is not a substitute for professional medical advice.
+    </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
